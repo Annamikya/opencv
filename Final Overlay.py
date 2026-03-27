@@ -52,3 +52,7 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+key = cv2.waitKey(1) & 0xFF
+
+if key == ord('c'):
+    canvas = np.zeros_like(frame)  # clear screen
